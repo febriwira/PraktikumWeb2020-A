@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>PBWA2020 - Pertemuan 5</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <!--tag h1 digunakan untuk membuat text heading-->
+            <h1>Halaman Pendaftaran</h1>
+            <!--tag p digunakan untuk membuat paragraf-->
+            <p>Pendaftaran sebagai peserta dalam RAKERWIL (Rapat Kerja Wilayah) Bali dan Nusa Tenggara 2020</p>  
+        </header>
+        <table align="center" height="300px;" style="margin-top: 20px;">
+            <form action="">
+                <tr>
+                    <td><input type="text" id="nama" name="nama" placeholder="Nama Lengkap"></td>
+                    <td><input type="text" id="nama-panggilan" name="nama-panggilan" placeholder="Nama Panggilan"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="telpon" name="telpon" placeholder="No. Telp"></td>
+                    <td><input type="text" id="Email" name="Email" placeholder="Email"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="tanggal-lahir" name="tanggal-lahir" placeholder="Tanggal Lahir"></td>
+                    <td><input type="text" id="tempat-lahir" name="tempat-lahir" placeholder="Tempat Lahir"></td>
+                    <td>
+                        <select name="agama" id="agama">
+                            <option value="agama">Agama</option>
+                            <option value="buddha">Buddha</option>
+                            <option value="islam">Islam</option>
+                            <option value="hindu">Hindu</option>
+                            <option value="kristen">Kristen</option>
+                            <option value="katolik">Katolik</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="universitas" name="universitas" placeholder="Universitas"></td>
+                    <td><input type="text" id="fakultas" name="fakultas" placeholder="Fakultas/Jurusan"></td>
+                    <td><input type="text" id="jabatan" name="jabatan" placeholder="Jabatan"></td>
+                </tr>
+                <tr>
+                    <td colspan="6"><input type="text" id="alamat" name="alamat" placeholder="Alamat Asal" style="width: 100%;"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="foto-almamater">Foto Almamater</label><br>
+                        <input type="file" id="foto-almamater" name="foto-almamater">
+                    </td>
+                    <td>
+                        <label for="foto-almamater">Foto KTP</label><br>
+                        <input type="file" id="foto-ktp" name="foto-ktp">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Daftar" style="width: auto;"></td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

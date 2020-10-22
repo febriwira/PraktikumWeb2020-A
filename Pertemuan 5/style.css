@@ -1,0 +1,22 @@
+header{
+    background-image: url(1.jfif);
+    padding: 50px;
+    color: white;
+}
+
+header h1{
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+p{
+    font-family: sans-serif;
+}
+
+table input{
+    width: 300px;
+}
+
+table select{
+    width: 300px;
+}
