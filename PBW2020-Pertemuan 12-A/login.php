@@ -13,27 +13,32 @@
             //checking password
             $row = mysqli_fetch_assoc($result);
             if(password_verify($password, $row["password"]) ){
-                if ($row["level"] == 1) {
-                    //set session
-                    $_SESSION["user"] = $row;
+                $_SESSION["user"] = $row;
                     echo "<script>
                       alert('Login berhasil!');
                       document.location.href = 'index.php';
                     </script>";
                     exit;
-                } else if ($row["level"] == 2) {
-                    //set session
-                    $_SESSION["user"] = $row;
-                    echo "<script>
-                      alert('Login berhasil!');
-                      document.location.href = 'index.php';
-                    </script>";
-                    exit;
-                }
+                // if ($row["level"]==1) {
+                //     //set session
+                //     $_SESSION["user"] = $row;
+                //     echo "<script>
+                //       alert('Login berhasil!');
+                //       document.location.href = 'index.php';
+                //     </script>";
+                //     exit;
+                // } else if ($row["level"]==2) {
+                //     //set session
+                //     $_SESSION["user"] = $row;
+                //     echo "<script>
+                //       alert('Login berhasil!');
+                //       document.location.href = 'index.php';
+                //     </script>";
+                //     exit;
+                // }
             }
         }
         $error = true;
-        var_dump($row);
     }
 ?>
 
@@ -53,7 +58,8 @@
         <?php  if( isset($error) ) : ?>
             <p style="color : red; font-style: italic"> Username / Password salah</p>
         <?php endif ?>
-        <div class="col-md-5">
+        <div class="col-md-5 mx-auto" style="margin-top: 15%;">
+            <h3>Login</h3>
             <form action="" method="post">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
